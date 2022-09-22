@@ -1,0 +1,349 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Shop</title>
+<script src="https://kit.fontawesome.com/1fca7a872a.js" crossorigin="anonymous"></script>
+{% endblock  %}
+
+
+{% block body %}
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="/"><h1>RAHISI</h1></a>
+
+        <ul>
+            <a href="/"><li>Home</li></a>
+            <a href=""><li>Shop</li></a>
+            <a href="/About"><li>About Us</li></a>
+            <a href=""><li>Contact</li></a>            
+        </ul>
+
+        <div class="left_items">
+            <a href="/Cart">
+            <div class="cart_nav">
+                <h4>Cart</h4>
+                <img src="{{url_for('static',filename='bxs_cart.png')}}" alt="">
+                <div class="cart_number"><span>3</span></div>
+            </div>
+            </a>
+
+            <div class="log_reg">
+                
+                <a href="/test"  ><button class="login">Log in</button></a>
+   
+                <button class="register_btn">Register</button>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Hero section -->
+    <section class="hero">
+
+        <div class="hero_content">
+            <h1>Get high quality clothes from us</h1>
+            <p>Making our customers look good is our priority</p>
+            <button>Shop Now</button>
+        </div>
+
+        <div class="hero_images">
+            <img src="{{url_for('static',filename='Rectangle 4.png')}}" alt="" class="img_1">
+             <img src="{{url_for('static',filename='Rectangle 3.png')}}" alt="" class="img_2">
+            <img src="{{url_for('static',filename='Rectangle 1.png')}}" alt="" class="img_3"> 
+        </div>
+
+    </section>
+
+    <!-- Categories section -->
+    <section class="filter_section">
+        <h1>Categories</h1>
+
+        <div class="filter">
+        
+
+            <div class="filter_container">
+                <img src="{{url_for('static',filename='T-shirt.png')}}" alt="">
+                <h3>T-shirt</h3>
+            </div>
+
+
+            <div class="filter_container">
+                <img src="{{url_for('static',filename='Jacket.png')}}" alt="">
+                <h3>Jacket</h3>
+            </div>
+
+
+            <div class="filter_container">
+                <img src="{{url_for('static',filename='Shirt.png')}}" alt="">
+                <h3>Shirt</h3>
+            </div>
+
+
+            <div class="filter_container">
+                <img src="{{url_for('static',filename='Jeans.png')}}" alt="">
+                <h3>Jeans</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Our best selling products -->
+    <section class="best_selling">
+        <h1>Our Best Selling Products</h1>
+        <div class="categories">
+            <ul>
+
+                <li style="color:#18A0FB; text-decoration:underline;">T-shirt</li>
+                <li>Jacket</li>
+                <li>Shirt</li>
+                <li>T-shirt</li>
+            </ul>
+
+            <h3 style="cursor: pointer;">VIEW ALL <span><i class="fa-solid fa-arrow-right-long fa-xl"></i></span> </h3>
+        </div>
+        <!-- Cards -->
+        <div class="cards">
+
+                    <div class="card_container">
+                        
+                        
+                            <img src="{{url_for('static',filename='Card_1.png')}}" class="card_main_img" alt="">
+                        <div class="main_content">
+                            <h2>Gucci</h2>
+                            <h3>Price: $ 430</h3>
+
+                            <div class="content">
+                                <div style="display: flex; align-items:center;">
+                                    <img src="{{url_for('static',filename='Star 1.png')}}" alt="">
+                                    <img src="{{url_for('static',filename='Star 1.png')}}" alt="">
+                                    <img src="{{url_for('static',filename='Star 1.png')}}" alt="">
+                                    <img src="{{url_for('static',filename='Star 1.png')}}" alt="">
+                                    <span style="padding-left: 15px;">(1k)</span>
+                                </div>
+                            
+                                <div style="display: flex; align-items:center; gap:10px">
+                                    <span style="color: red;"><i class="fa-solid fa-heart fa-xl"></i></span>
+                                    <span><i class="fa-regular fa-bookmark fa-xl"></i></i></span>
+                                </div>
+
+                            </div>
+
+                            <button>ADD TO CART</button>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="card_container">
+                        
+                        
+                        <img src="{{url_for('static',filename='Card_1.png')}}" class="card_main_img" alt="">
+                    <div class="main_content">
+                        <h2>Gucci</h2>
+                        <h3>Price: $ 430</h3>
+
+                        <div class="content">
+                            <div style="display: flex; align-items:center;">
+                                <img src="{{url_for('static',filename='Star 1.png')}}" alt="">
+                                <img src="{{url_for('static',filename='Star 1.png')}}" alt="">
+                                <img src="{{url_for('static',filename='Star 1.png')}}" alt="">
+                                <img src="{{url_for('static',filename='Star 1.png')}}" alt="">
+                                <span style="padding-left: 15px;">(1k)</span>
+                            </div>
+                        
+                            <div style="display: flex; align-items:center; gap:10px">
+                                <span style="color: red;"><i class="fa-solid fa-heart fa-xl"></i></span>
+                                <span><i class="fa-regular fa-bookmark fa-xl"></i></i></span>
+                            </div>
+
+                        </div>
+
+                        <button>ADD TO CART</button>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="card_container">
+                        
+                        
+                    <img src="{{url_for('static',filename='Card_1.png')}}" class="card_main_img" alt="">
+                <div class="main_content">
+                    <h2>Gucci</h2>
+                    <h3>Price: $ 430</h3>
+
+                    <div class="content">
+                        <div style="display: flex; align-items:center;">
+                            <img src="{{url_for('static',filename='Star 1.png')}}" alt="">
+                            <img src="{{url_for('static',filename='Star 1.png')}}" alt="">
+                            <img src="{{url_for('static',filename='Star 1.png')}}" alt="">
+                            <img src="{{url_for('static',filename='Star 1.png')}}" alt="">
+                            <span style="padding-left: 15px;">(1k)</span>
+                        </div>
+                    
+                        <div style="display: flex; align-items:center; gap:10px">
+                            <span style="color: red;"><i class="fa-solid fa-heart fa-xl"></i></span>
+                            <span><i class="fa-regular fa-bookmark fa-xl"></i></i></span>
+                        </div>
+
+                    </div>
+
+                    <button>ADD TO CART</button>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="card_container">
+                        
+                        
+                <img src="{{url_for('static',filename='Card_1.png')}}" class="card_main_img" alt="">
+            <div class="main_content">
+                <h2>Gucci</h2>
+                <h3>Price: $ 430</h3>
+
+                <div class="content">
+                    <div style="display: flex; align-items:center;">
+                        <img src="{{url_for('static',filename='Star 1.png')}}" alt="">
+                        <img src="{{url_for('static',filename='Star 1.png')}}" alt="">
+                        <img src="{{url_for('static',filename='Star 1.png')}}" alt="">
+                        <img src="{{url_for('static',filename='Star 1.png')}}" alt="">
+                        <span style="padding-left: 15px;">(1k)</span>
+                    </div>
+                
+                    <div style="display: flex; align-items:center; gap:10px">
+                        <span style="color: red;"><i class="fa-solid fa-heart fa-xl"></i></span>
+                        <span><i class="fa-regular fa-bookmark fa-xl"></i></i></span>
+                    </div>
+
+                </div>
+
+                <button>ADD TO CART</button>
+            </div>
+
+        </div>
+
+
+
+        <div class="card_container">
+                        
+                        
+            <img src="{{url_for('static',filename='Card_1.png')}}" class="card_main_img" alt="">
+        <div class="main_content">
+            <h2>Gucci</h2>
+            <h3>Price: $ 430</h3>
+
+            <div class="content">
+                <div style="display: flex; align-items:center;">
+                    <img src="{{url_for('static',filename='Star 1.png')}}" alt="">
+                    <img src="{{url_for('static',filename='Star 1.png')}}" alt="">
+                    <img src="{{url_for('static',filename='Star 1.png')}}" alt="">
+                    <img src="{{url_for('static',filename='Star 1.png')}}" alt="">
+                    <span style="padding-left: 15px;">(1k)</span>
+                </div>
+            
+                <div style="display: flex; align-items:center; gap:10px">
+                    <span style="color: red;"><i class="fa-solid fa-heart fa-xl"></i></span>
+                    <span><i class="fa-regular fa-bookmark fa-xl"></i></i></span>
+                </div>
+
+            </div>
+
+            <button>ADD TO CART</button>
+        </div>
+
+    </div>
+
+
+
+    <div class="card_container">
+                        
+                        
+        <img src="{{url_for('static',filename='Card_1.png')}}" class="card_main_img" alt="">
+    <div class="main_content">
+        <h2>Gucci</h2>
+        <h3>Price: $ 430</h3>
+
+        <div class="content">
+            <div style="display: flex; align-items:center;">
+                <img src="{{url_for('static',filename='Star 1.png')}}" alt="">
+                <img src="{{url_for('static',filename='Star 1.png')}}" alt="">
+                <img src="{{url_for('static',filename='Star 1.png')}}" alt="">
+                <img src="{{url_for('static',filename='Star 1.png')}}" alt="">
+                <span style="padding-left: 15px;">(1k)</span>
+            </div>
+        
+            <div style="display: flex; align-items:center; gap:10px">
+                <span style="color: red;"><i class="fa-solid fa-heart fa-xl"></i></span>
+                <span><i class="fa-regular fa-bookmark fa-xl"></i></i></span>
+            </div>
+
+        </div>
+
+        <button>ADD TO CART</button>
+    </div>
+
+</div>
+
+
+
+
+        </div>
+</section>
+
+<footer>
+        <div class="rahisi_sect">
+            <h1 class="rahisi">Rahisi</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Nam mollis, justo nec porttitor auctor, erat sapien faucibus lectus, 
+                vel tempor dolor augue et lectus. 
+            </p>
+        </div>
+
+        <div class="home_sect">
+            <h1 class="home">Home</h1>
+            <ul>
+                <li>Products</li>
+                <li>Categories</li>
+                <li>Shop</li>
+                <li>Log in</li>
+            </ul>
+        </div>
+
+        <div class="shop_sect">
+            <h1 class="shop">Shop</h1>
+            <ul>
+                <li>T-shirt</li>
+                <li>Jacket</li>
+                <li>Shirt</li>
+                <li>Jeans</li>
+            </ul>
+        </div>
+
+        <div class="cat_sect">
+            <h1 class="cat">Categories</h1>
+            <ul>
+                <li>Men</li>
+                <li>Women</li>
+            </ul>
+        </div>
+
+        <div class="contact_sect">
+            <h1 class="contact">Contact</h1>
+            <p>rahisi@gmail.com</p>
+            <ul>
+                <li><i class="fa-brands fa-square-facebook fa-2xl"></i></li>
+                <li><i class="fa-brands fa-square-twitter fa-2xl"></i></li>
+                <li><i class="fa-brands fa-linkedin fa-2xl"></i></li>
+                <li><i class="fa-brands fa-square-instagram fa-2xl"></i></li>
+            </ul>
+        </div>
+</footer>
+{% endblock  %}

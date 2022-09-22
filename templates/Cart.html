@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Shop</title>
+<script src="https://kit.fontawesome.com/1fca7a872a.js" crossorigin="anonymous"></script>
+{% endblock  %}
+
+
+{% block body %}
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="/"><h1>RAHISI</h1></a>
+
+        <ul>
+            <a href="/"><li>Home</li></a>
+            <a href=""><li>Shop</li></a>
+            <a href="/About"><li>About Us</li></a>
+            <a href=""><li>Contact</li></a>            
+        </ul>
+
+        <div class="left_items">
+            <a href="/Cart">
+            <div class="cart_nav">
+                <h4>Cart</h4>
+                <img src="{{url_for('static',filename='bxs_cart.png')}}" alt="">
+                <div class="cart_number"><span>3</span></div>
+            </div>
+            </a>
+
+            <div class="log_reg">
+                
+                <a href="#"  ><button class="login">Log in</button></a>
+   
+                <button class="register_btn">Register</button>
+            </div>
+        </div>
+
+    </nav>
+
+
+        <footer>
+            <div class="rahisi_sect">
+                <h1 class="rahisi">Rahisi</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nam mollis, justo nec porttitor auctor, erat sapien faucibus lectus, 
+                    vel tempor dolor augue et lectus. 
+                </p>
+            </div>
+    
+            <div class="home_sect">
+                <h1 class="home">Home</h1>
+                <ul>
+                    <li>Products</li>
+                    <li>Categories</li>
+                    <li>Shop</li>
+                    <li>Log in</li>
+                </ul>
+            </div>
+    
+            <div class="shop_sect">
+                <h1 class="shop">Shop</h1>
+                <ul>
+                    <li>T-shirt</li>
+                    <li>Jacket</li>
+                    <li>Shirt</li>
+                    <li>Jeans</li>
+                </ul>
+            </div>
+    
+            <div class="cat_sect">
+                <h1 class="cat">Categories</h1>
+                <ul>
+                    <li>Men</li>
+                    <li>Women</li>
+                </ul>
+            </div>
+    
+            <div class="contact_sect">
+                <h1 class="contact">Contact</h1>
+                <p>rahisi@gmail.com</p>
+                <ul>
+                    <li><i class="fa-brands fa-square-facebook fa-2xl"></i></li>
+                    <li><i class="fa-brands fa-square-twitter fa-2xl"></i></li>
+                    <li><i class="fa-brands fa-linkedin fa-2xl"></i></li>
+                    <li><i class="fa-brands fa-square-instagram fa-2xl"></i></li>
+                </ul>
+            </div>
+    </footer>
+{% endblock  %}
